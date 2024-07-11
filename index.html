@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <!--fontawesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <h1>
+            <span>IQTest</span>
+          </h1>
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>
+              Services <span><i class="fa-solid fa-chevron-down"></i></span>
+            </li>
+            <li>Testimonials</li>
+          </ul>
+          <div class="buttons">
+            <button>Register</button>
+            <button>Sign in</button>
+          </div>
+        </nav>
+      </header>
+
+      <article class="overall">
+        <section class="leftside">
+          <h1 id="h1Replaced">Javascript Beginner's Test</h1>
+          <p id="kueshion"></p>
+          <div id="testnumber"></div>
+        </section>
+
+        <section class="rightside">
+          <div class="container">
+            <div id="quiz"></div>
+            <div id="result" class="result"></div>
+            <div class="buttoncontain">
+              <button id="submit" class="button">CONTINUE</button>
+              <button id="retry" class="button">RETRY</button>
+              <button id="showAnswer" class="button">Show RESULT</button>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <section class="card">
+      <div class="card_side card_side_front">Hello!</div>
+      <div class="card_side card_side_back card_side_back_1">
+        <button id="next" class="button">Next</button>
+      </div>
+    </section>
+
+    <br /><br />
+
+    <script src="script.js"></script>
+  </body>
+</html>

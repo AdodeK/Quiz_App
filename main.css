@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  min-height: 100vh; /*Just added this Bro*/
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-color: #f7f270;
+}
+
+header {
+  padding: 15px 40px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(47, 46, 21);
+}
+header nav {
+  padding: 8px 20px;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px;
+  border: 1px solid rgb(181, 179, 179);
+}
+
+header nav h1 {
+  font-size: 2.5rem;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 3vw;
+  color: rgb(237, 235, 235);
+  font-size: 1.4rem;
+  filter: brightness(90%);
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+nav div {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+nav div button {
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 4px 10px;
+  border-radius: 11px;
+  border: 1.5px solid transparent;
+}
+
+nav div button:first-child {
+  background-color: #70f786;
+}
+
+nav div button:last-child {
+  background-color: transparent;
+  color: white;
+  border-color: rgb(222, 220, 220);
+}
+
+article.overall {
+  padding-top: 10px;
+  width: 80%;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+/* copied code */
+section.leftside {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding-right: 5%;
+}
+
+.leftside h1 {
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 8rem;
+  line-height: 7rem;
+}
+
+#kueshion {
+  font-size: 2.8rem;
+  line-height: 3rem;
+}
+
+#testnumber {
+  display: grid;
+  place-content: center;
+  align-self: center;
+  font-weight: 500;
+  font-size: 1.4rem;
+  background-color: white;
+  height: 40px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1.5px solid;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 10px;
+  width: 350px;
+  background-color: #141414;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.112);
+  border-radius: 10px;
+}
+
+.question {
+  font-weight: 500;
+}
+
+.options {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option {
+  display: flex; /*option holds radioinput n optionsText*/
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 10px;
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.option:hover {
+  background-color: #70f78687;
+}
+
+.styleradio {
+  width: 20px;
+}
+
+.buttoncontain {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 20px;
+  background-color: #70f786;
+  color: rgb(47, 47, 47);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px 0 10px 0;
+  transition: background-color 0.4s ease-in-out;
+}
+
+#submit {
+  background-color: transparent;
+  color: white;
+  border: 1.5px solid rgb(181, 179, 179);
+}
+
+#submit:hover {
+  filter: brightness(130%);
+}
+
+#showAnswer {
+  background-color: transparent;
+  color: white;
+  border: 1.5px solid rgb(181, 179, 179);
+}
+
+#showAnswer:hover {
+  filter: brightness(130%);
+}
+
+.button:hover {
+  filter: brightness(110%);
+}
+
+.result {
+  text-align: center;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.herenow {
+  color: #ddd;
+  font-size: 1.6rem;
+  margin-top: 8px;
+  font-weight: 300;
+}
+
+/* perspective has to be defined on the parent of the element on which it should act */
+/* perspective has to be defined on the parent of the element on which it should act */
+/* perspective has to be defined on the parent of the element on which it should act */
+
+.card {
+  margin: 20px 40%;
+  padding: 20px 0;
+  width: 250px;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 350px;
+}
+
+.card_side {
+  color: #333;
+  font-size: 2rem;
+  width: 100%;
+  backface-visibility: hidden;
+  height: 350px;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.212);
+}
+.card_side_front {
+  background-color: rgb(250, 239, 241);
+}
+
+.card_side_back {
+  transform: rotateY(180deg);
+}
+
+.card_side_back_1 {
+  background-color: rgb(224, 212, 214);
+}
+
+.card:hover .card_side_front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card_side_back {
+  transform: rotateY(0);
+}
